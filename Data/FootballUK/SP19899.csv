@@ -1,0 +1,381 @@
+Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR
+SP1,29/08/1998,Alaves,Betis,0,0,D,0,0,D
+SP1,29/08/1998,Valencia,Ath Madrid,1,0,H,0,0,D
+SP1,30/08/1998,Celta,La Coruna,0,0,D,0,0,D
+SP1,30/08/1998,Espanol,Tenerife,2,1,H,1,0,H
+SP1,30/08/1998,Extremadura,Valladolid,0,0,D,0,0,D
+SP1,30/08/1998,Salamanca,Mallorca,0,0,D,0,0,D
+SP1,30/08/1998,Santander,Barcelona,0,0,D,0,0,D
+SP1,30/08/1998,Sociedad,Oviedo,3,3,D,1,2,A
+SP1,30/08/1998,Zaragoza,Ath Bilbao,2,0,H,0,0,D
+SP1,31/08/1998,Real Madrid,Villareal,4,1,H,1,1,D
+SP1,12/09/1998,Ath Bilbao,Santander,2,0,H,2,0,H
+SP1,12/09/1998,Ath Madrid,Salamanca,2,0,H,0,0,D
+SP1,12/09/1998,Barcelona,Extremadura,1,0,H,1,0,H
+SP1,12/09/1998,Betis,Zaragoza,1,3,A,0,1,A
+SP1,12/09/1998,La Coruna,Valencia,1,0,H,1,0,H
+SP1,12/09/1998,Tenerife,Sociedad,2,2,D,1,0,H
+SP1,12/09/1998,Valladolid,Real Madrid,0,1,A,0,1,A
+SP1,12/09/1998,Villareal,Celta,1,1,D,1,1,D
+SP1,13/09/1998,Mallorca,Espanol,2,0,H,1,0,H
+SP1,13/09/1998,Oviedo,Alaves,1,0,H,1,0,H
+SP1,19/09/1998,Real Madrid,Barcelona,2,2,D,2,1,H
+SP1,20/09/1998,Alaves,Zaragoza,1,0,H,0,0,D
+SP1,20/09/1998,Celta,Valladolid,0,0,D,0,0,D
+SP1,20/09/1998,Espanol,Ath Madrid,1,1,D,0,0,D
+SP1,20/09/1998,Extremadura,Ath Bilbao,0,1,A,0,0,D
+SP1,20/09/1998,Oviedo,Tenerife,0,1,A,0,1,A
+SP1,20/09/1998,Salamanca,La Coruna,3,1,H,1,0,H
+SP1,20/09/1998,Santander,Betis,1,0,H,0,0,D
+SP1,20/09/1998,Sociedad,Mallorca,0,1,A,0,1,A
+SP1,20/09/1998,Valencia,Villareal,1,0,H,1,0,H
+SP1,26/09/1998,Ath Bilbao,Real Madrid,2,3,A,1,1,D
+SP1,26/09/1998,Ath Madrid,Sociedad,4,1,H,3,0,H
+SP1,26/09/1998,Barcelona,Celta,2,2,D,1,1,D
+SP1,26/09/1998,Betis,Extremadura,1,1,D,0,0,D
+SP1,26/09/1998,Valladolid,Valencia,3,1,H,2,1,H
+SP1,27/09/1998,La Coruna,Espanol,1,0,H,0,0,D
+SP1,27/09/1998,Mallorca,Oviedo,0,0,D,0,0,D
+SP1,27/09/1998,Tenerife,Alaves,1,2,A,0,2,A
+SP1,27/09/1998,Villareal,Salamanca,5,0,H,1,0,H
+SP1,27/09/1998,Zaragoza,Santander,3,1,H,1,0,H
+SP1,03/10/1998,Valencia,Barcelona,1,3,A,1,0,H
+SP1,04/10/1998,Alaves,Santander,0,1,A,0,1,A
+SP1,04/10/1998,Celta,Ath Bilbao,3,2,H,2,0,H
+SP1,04/10/1998,Espanol,Villareal,1,1,D,0,0,D
+SP1,04/10/1998,Extremadura,Zaragoza,0,2,A,0,0,D
+SP1,04/10/1998,Oviedo,Ath Madrid,3,1,H,1,0,H
+SP1,04/10/1998,Real Madrid,Betis,0,1,A,0,0,D
+SP1,04/10/1998,Salamanca,Valladolid,1,0,H,0,0,D
+SP1,04/10/1998,Sociedad,La Coruna,2,0,H,1,0,H
+SP1,04/10/1998,Tenerife,Mallorca,1,1,D,1,0,H
+SP1,17/10/1998,Ath Bilbao,Valencia,2,0,H,1,0,H
+SP1,17/10/1998,Ath Madrid,Tenerife,2,0,H,0,0,D
+SP1,17/10/1998,Barcelona,Salamanca,1,1,D,0,0,D
+SP1,17/10/1998,Betis,Celta,0,3,A,0,0,D
+SP1,17/10/1998,Villareal,Sociedad,1,1,D,0,1,A
+SP1,17/10/1998,Zaragoza,Real Madrid,3,4,A,1,3,A
+SP1,18/10/1998,La Coruna,Oviedo,4,0,H,3,0,H
+SP1,18/10/1998,Mallorca,Alaves,2,1,H,0,0,D
+SP1,18/10/1998,Santander,Extremadura,3,1,H,0,0,D
+SP1,18/10/1998,Valladolid,Espanol,2,1,H,0,1,A
+SP1,24/10/1998,Celta,Zaragoza,2,0,H,0,0,D
+SP1,25/10/1998,Alaves,Extremadura,0,1,A,0,1,A
+SP1,25/10/1998,Espanol,Barcelona,1,2,A,0,1,A
+SP1,25/10/1998,Mallorca,Ath Madrid,4,0,H,1,0,H
+SP1,25/10/1998,Oviedo,Villareal,0,0,D,0,0,D
+SP1,25/10/1998,Real Madrid,Santander,2,2,D,0,0,D
+SP1,25/10/1998,Salamanca,Ath Bilbao,2,1,H,1,1,D
+SP1,25/10/1998,Sociedad,Valladolid,1,0,H,0,0,D
+SP1,25/10/1998,Tenerife,La Coruna,1,1,D,1,0,H
+SP1,25/10/1998,Valencia,Betis,5,1,H,2,1,H
+SP1,31/10/1998,Ath Bilbao,Espanol,2,2,D,1,1,D
+SP1,31/10/1998,Ath Madrid,Alaves,3,0,H,2,0,H
+SP1,31/10/1998,Barcelona,Sociedad,4,1,H,2,1,H
+SP1,31/10/1998,Betis,Salamanca,1,0,H,0,0,D
+SP1,31/10/1998,Extremadura,Real Madrid,1,5,A,0,3,A
+SP1,31/10/1998,Santander,Celta,2,2,D,0,1,A
+SP1,31/10/1998,Zaragoza,Valencia,1,4,A,1,1,D
+SP1,01/11/1998,La Coruna,Mallorca,1,1,D,1,1,D
+SP1,01/11/1998,Valladolid,Oviedo,2,1,H,0,0,D
+SP1,01/11/1998,Villareal,Tenerife,2,5,A,1,2,A
+SP1,07/11/1998,Espanol,Betis,1,0,H,1,0,H
+SP1,08/11/1998,Alaves,Real Madrid,1,1,D,1,0,H
+SP1,08/11/1998,Ath Madrid,La Coruna,1,1,D,0,0,D
+SP1,08/11/1998,Celta,Extremadura,5,1,H,0,0,D
+SP1,08/11/1998,Mallorca,Villareal,1,0,H,1,0,H
+SP1,08/11/1998,Oviedo,Barcelona,2,1,H,0,1,A
+SP1,08/11/1998,Salamanca,Zaragoza,1,2,A,1,0,H
+SP1,08/11/1998,Sociedad,Ath Bilbao,3,1,H,2,1,H
+SP1,08/11/1998,Tenerife,Valladolid,2,2,D,1,1,D
+SP1,08/11/1998,Valencia,Santander,3,0,H,0,0,D
+SP1,14/11/1998,Real Madrid,Celta,1,2,A,0,1,A
+SP1,15/11/1998,Ath Bilbao,Oviedo,3,5,A,2,1,H
+SP1,15/11/1998,Barcelona,Tenerife,4,1,H,1,1,D
+SP1,15/11/1998,Betis,Sociedad,1,0,H,1,0,H
+SP1,15/11/1998,Extremadura,Valencia,1,0,H,0,0,D
+SP1,15/11/1998,La Coruna,Alaves,2,2,D,1,1,D
+SP1,15/11/1998,Santander,Salamanca,4,1,H,2,0,H
+SP1,15/11/1998,Valladolid,Mallorca,1,0,H,1,0,H
+SP1,15/11/1998,Villareal,Ath Madrid,2,1,H,1,0,H
+SP1,15/11/1998,Zaragoza,Espanol,0,3,A,0,0,D
+SP1,20/11/1998,Tenerife,Ath Bilbao,0,1,A,0,0,D
+SP1,21/11/1998,Alaves,Celta,2,0,H,1,0,H
+SP1,21/11/1998,Ath Madrid,Valladolid,6,1,H,2,1,H
+SP1,21/11/1998,Mallorca,Barcelona,1,0,H,1,0,H
+SP1,21/11/1998,Oviedo,Betis,0,1,A,0,1,A
+SP1,21/11/1998,Sociedad,Zaragoza,0,0,D,0,0,D
+SP1,21/11/1998,Valencia,Real Madrid,3,1,H,1,0,H
+SP1,22/11/1998,Espanol,Santander,1,1,D,0,0,D
+SP1,22/11/1998,La Coruna,Villareal,2,1,H,1,1,D
+SP1,22/11/1998,Salamanca,Extremadura,2,1,H,0,0,D
+SP1,28/11/1998,Barcelona,Ath Madrid,0,1,A,0,1,A
+SP1,29/11/1998,Ath Bilbao,Mallorca,1,0,H,1,0,H
+SP1,29/11/1998,Betis,Tenerife,1,0,H,0,0,D
+SP1,29/11/1998,Celta,Valencia,2,2,D,1,1,D
+SP1,29/11/1998,Extremadura,Espanol,1,0,H,1,0,H
+SP1,29/11/1998,Santander,Sociedad,0,1,A,0,0,D
+SP1,29/11/1998,Valladolid,La Coruna,0,1,A,0,1,A
+SP1,29/11/1998,Villareal,Alaves,2,0,H,1,0,H
+SP1,29/11/1998,Zaragoza,Oviedo,1,0,H,1,0,H
+SP1,05/12/1998,Ath Madrid,Ath Bilbao,0,0,D,0,0,D
+SP1,05/12/1998,Espanol,Real Madrid,0,0,D,0,0,D
+SP1,05/12/1998,La Coruna,Barcelona,2,1,H,0,0,D
+SP1,05/12/1998,Mallorca,Betis,1,0,H,0,0,D
+SP1,05/12/1998,Salamanca,Celta,1,1,D,0,1,A
+SP1,05/12/1998,Sociedad,Extremadura,2,0,H,1,0,H
+SP1,06/12/1998,Alaves,Valencia,0,1,A,0,0,D
+SP1,06/12/1998,Oviedo,Santander,1,0,H,1,0,H
+SP1,06/12/1998,Tenerife,Zaragoza,1,1,D,0,0,D
+SP1,06/12/1998,Villareal,Valladolid,2,1,H,1,0,H
+SP1,12/12/1998,Betis,Ath Madrid,0,0,D,0,0,D
+SP1,13/12/1998,Ath Bilbao,La Coruna,2,1,H,1,1,D
+SP1,13/12/1998,Barcelona,Villareal,1,3,A,0,2,A
+SP1,13/12/1998,Celta,Espanol,2,0,H,2,0,H
+SP1,13/12/1998,Extremadura,Oviedo,0,1,A,0,1,A
+SP1,13/12/1998,Real Madrid,Sociedad,3,2,H,1,0,H
+SP1,13/12/1998,Santander,Tenerife,0,0,D,0,0,D
+SP1,13/12/1998,Valencia,Salamanca,1,0,H,0,0,D
+SP1,13/12/1998,Valladolid,Alaves,3,0,H,0,0,D
+SP1,13/12/1998,Zaragoza,Mallorca,0,1,A,0,1,A
+SP1,19/12/1998,La Coruna,Betis,2,2,D,1,1,D
+SP1,20/12/1998,Alaves,Salamanca,1,0,H,0,0,D
+SP1,20/12/1998,Ath Madrid,Zaragoza,0,0,D,0,0,D
+SP1,20/12/1998,Espanol,Valencia,2,1,H,1,1,D
+SP1,20/12/1998,Mallorca,Santander,1,1,D,0,0,D
+SP1,20/12/1998,Oviedo,Real Madrid,1,0,H,0,0,D
+SP1,20/12/1998,Sociedad,Celta,2,0,H,1,0,H
+SP1,20/12/1998,Tenerife,Extremadura,1,1,D,0,0,D
+SP1,20/12/1998,Valladolid,Barcelona,0,1,A,0,1,A
+SP1,20/12/1998,Villareal,Ath Bilbao,0,1,A,0,0,D
+SP1,02/01/1999,Valencia,Sociedad,2,0,H,1,0,H
+SP1,03/01/1999,Ath Bilbao,Valladolid,2,1,H,0,1,A
+SP1,03/01/1999,Barcelona,Alaves,7,1,H,2,0,H
+SP1,03/01/1999,Betis,Villareal,4,1,H,1,0,H
+SP1,03/01/1999,Celta,Oviedo,6,2,H,3,0,H
+SP1,03/01/1999,Extremadura,Mallorca,1,0,H,1,0,H
+SP1,03/01/1999,Real Madrid,Tenerife,4,0,H,1,0,H
+SP1,03/01/1999,Salamanca,Espanol,2,3,A,2,1,H
+SP1,03/01/1999,Santander,Ath Madrid,2,3,A,0,2,A
+SP1,03/01/1999,Zaragoza,La Coruna,3,1,H,0,1,A
+SP1,06/01/1999,Real Madrid,Salamanca,3,1,H,1,1,D
+SP1,09/01/1999,Barcelona,Ath Bilbao,4,2,H,2,0,H
+SP1,10/01/1999,Alaves,Espanol,1,1,D,0,1,A
+SP1,10/01/1999,Ath Madrid,Extremadura,5,0,H,2,0,H
+SP1,10/01/1999,La Coruna,Santander,1,2,A,0,1,A
+SP1,10/01/1999,Mallorca,Real Madrid,2,1,H,2,0,H
+SP1,10/01/1999,Oviedo,Valencia,2,2,D,2,1,H
+SP1,10/01/1999,Sociedad,Salamanca,4,0,H,0,0,D
+SP1,10/01/1999,Tenerife,Celta,0,2,A,0,0,D
+SP1,10/01/1999,Valladolid,Betis,0,3,A,,,
+SP1,10/01/1999,Villareal,Zaragoza,1,1,D,1,0,H
+SP1,16/01/1999,Celta,Mallorca,4,2,H,1,1,D
+SP1,17/01/1999,Alaves,Ath Bilbao,1,2,A,0,1,A
+SP1,17/01/1999,Betis,Barcelona,0,3,A,0,2,A
+SP1,17/01/1999,Espanol,Sociedad,0,0,D,0,0,D
+SP1,17/01/1999,Extremadura,La Coruna,1,2,A,0,1,A
+SP1,17/01/1999,Real Madrid,Ath Madrid,4,2,H,1,0,H
+SP1,17/01/1999,Salamanca,Oviedo,1,1,D,0,0,D
+SP1,17/01/1999,Santander,Villareal,1,2,A,0,1,A
+SP1,17/01/1999,Valencia,Tenerife,1,1,D,1,0,H
+SP1,17/01/1999,Zaragoza,Valladolid,2,0,H,0,0,D
+SP1,23/01/1999,Ath Bilbao,Betis,0,0,D,0,0,D
+SP1,24/01/1999,Ath Madrid,Celta,2,1,H,1,0,H
+SP1,24/01/1999,Barcelona,Zaragoza,3,1,H,1,0,H
+SP1,24/01/1999,La Coruna,Real Madrid,4,0,H,3,0,H
+SP1,24/01/1999,Mallorca,Valencia,0,1,A,0,0,D
+SP1,24/01/1999,Oviedo,Espanol,1,1,D,0,1,A
+SP1,24/01/1999,Sociedad,Alaves,2,1,H,1,1,D
+SP1,24/01/1999,Tenerife,Salamanca,1,0,H,0,0,D
+SP1,24/01/1999,Valladolid,Santander,0,0,D,0,0,D
+SP1,24/01/1999,Villareal,Extremadura,1,1,D,1,1,D
+SP1,30/01/1999,Ath Bilbao,Zaragoza,2,0,H,1,0,H
+SP1,30/01/1999,Ath Madrid,Valencia,1,2,A,1,2,A
+SP1,30/01/1999,Betis,Alaves,1,0,H,0,0,D
+SP1,30/01/1999,Mallorca,Salamanca,1,0,H,0,0,D
+SP1,30/01/1999,Oviedo,Sociedad,2,1,H,0,0,D
+SP1,30/01/1999,Villareal,Real Madrid,0,2,A,0,0,D
+SP1,31/01/1999,Barcelona,Santander,3,2,H,2,1,H
+SP1,31/01/1999,La Coruna,Celta,2,1,H,2,0,H
+SP1,31/01/1999,Tenerife,Espanol,0,0,D,0,0,D
+SP1,31/01/1999,Valladolid,Extremadura,0,0,D,0,0,D
+SP1,06/02/1999,Valencia,La Coruna,0,0,D,0,0,D
+SP1,07/02/1999,Alaves,Oviedo,2,2,D,1,0,H
+SP1,07/02/1999,Celta,Villareal,4,1,H,1,1,D
+SP1,07/02/1999,Espanol,Mallorca,1,0,H,1,0,H
+SP1,07/02/1999,Extremadura,Barcelona,1,2,A,1,1,D
+SP1,07/02/1999,Real Madrid,Valladolid,3,2,H,1,0,H
+SP1,07/02/1999,Salamanca,Ath Madrid,2,1,H,2,1,H
+SP1,07/02/1999,Santander,Ath Bilbao,2,0,H,1,0,H
+SP1,07/02/1999,Sociedad,Tenerife,1,1,D,0,1,A
+SP1,07/02/1999,Zaragoza,Betis,2,2,D,2,1,H
+SP1,13/02/1999,Ath Madrid,Espanol,1,2,A,1,1,D
+SP1,13/02/1999,La Coruna,Salamanca,1,0,H,0,0,D
+SP1,13/02/1999,Mallorca,Sociedad,1,0,H,0,0,D
+SP1,14/02/1999,Ath Bilbao,Extremadura,0,0,D,0,0,D
+SP1,14/02/1999,Barcelona,Real Madrid,3,0,H,2,0,H
+SP1,14/02/1999,Betis,Santander,1,1,D,0,1,A
+SP1,14/02/1999,Tenerife,Oviedo,0,2,A,0,1,A
+SP1,14/02/1999,Valladolid,Celta,2,1,H,1,0,H
+SP1,14/02/1999,Villareal,Valencia,1,0,H,0,0,D
+SP1,14/02/1999,Zaragoza,Alaves,1,1,D,1,1,D
+SP1,20/02/1999,Extremadura,Betis,2,1,H,0,0,D
+SP1,20/02/1999,Real Madrid,Ath Bilbao,0,1,A,0,0,D
+SP1,20/02/1999,Santander,Zaragoza,2,4,A,1,2,A
+SP1,21/02/1999,Alaves,Tenerife,3,1,H,2,1,H
+SP1,21/02/1999,Celta,Barcelona,0,0,D,0,0,D
+SP1,21/02/1999,Espanol,La Coruna,2,2,D,1,0,H
+SP1,21/02/1999,Oviedo,Mallorca,1,3,A,1,1,D
+SP1,21/02/1999,Salamanca,Villareal,1,0,H,1,0,H
+SP1,21/02/1999,Sociedad,Ath Madrid,3,2,H,1,2,A
+SP1,21/02/1999,Valencia,Valladolid,0,1,A,0,0,D
+SP1,27/02/1999,Ath Bilbao,Celta,0,0,D,0,0,D
+SP1,27/02/1999,Ath Madrid,Oviedo,0,0,D,0,0,D
+SP1,27/02/1999,Barcelona,Valencia,2,4,A,1,2,A
+SP1,27/02/1999,Betis,Real Madrid,3,2,H,1,1,D
+SP1,28/02/1999,La Coruna,Sociedad,0,1,A,0,0,D
+SP1,28/02/1999,Mallorca,Tenerife,1,1,D,1,1,D
+SP1,28/02/1999,Santander,Alaves,2,0,H,1,0,H
+SP1,28/02/1999,Valladolid,Salamanca,4,1,H,1,0,H
+SP1,28/02/1999,Villareal,Espanol,2,2,D,1,0,H
+SP1,28/02/1999,Zaragoza,Extremadura,3,1,H,1,0,H
+SP1,06/03/1999,Oviedo,La Coruna,1,2,A,0,1,A
+SP1,07/03/1999,Alaves,Mallorca,2,0,H,0,0,D
+SP1,07/03/1999,Celta,Betis,4,0,H,2,0,H
+SP1,07/03/1999,Espanol,Valladolid,0,2,A,0,1,A
+SP1,07/03/1999,Extremadura,Santander,0,3,A,0,1,A
+SP1,07/03/1999,Real Madrid,Zaragoza,3,2,H,1,0,H
+SP1,07/03/1999,Salamanca,Barcelona,1,4,A,0,3,A
+SP1,07/03/1999,Sociedad,Villareal,1,1,D,1,0,H
+SP1,07/03/1999,Tenerife,Ath Madrid,1,0,H,1,0,H
+SP1,07/03/1999,Valencia,Ath Bilbao,4,1,H,0,1,A
+SP1,13/03/1999,Ath Madrid,Mallorca,1,2,A,1,2,A
+SP1,13/03/1999,Betis,Valencia,0,1,A,0,1,A
+SP1,13/03/1999,Santander,Real Madrid,1,3,A,1,0,H
+SP1,13/03/1999,Zaragoza,Celta,0,1,A,0,1,A
+SP1,14/03/1999,Ath Bilbao,Salamanca,1,0,H,0,0,D
+SP1,14/03/1999,Barcelona,Espanol,3,0,H,2,0,H
+SP1,14/03/1999,Extremadura,Alaves,1,0,H,0,0,D
+SP1,14/03/1999,La Coruna,Tenerife,2,0,H,1,0,H
+SP1,14/03/1999,Valladolid,Sociedad,0,0,D,0,0,D
+SP1,14/03/1999,Villareal,Oviedo,0,0,D,0,0,D
+SP1,20/03/1999,Espanol,Ath Bilbao,1,1,D,1,0,H
+SP1,21/03/1999,Alaves,Ath Madrid,2,0,H,0,0,D
+SP1,21/03/1999,Celta,Santander,3,0,H,1,0,H
+SP1,21/03/1999,Mallorca,La Coruna,1,2,A,0,1,A
+SP1,21/03/1999,Oviedo,Valladolid,0,0,D,0,0,D
+SP1,21/03/1999,Real Madrid,Extremadura,2,0,H,1,0,H
+SP1,21/03/1999,Salamanca,Betis,1,3,A,0,1,A
+SP1,21/03/1999,Sociedad,Barcelona,0,2,A,0,1,A
+SP1,21/03/1999,Tenerife,Villareal,2,2,D,1,0,H
+SP1,21/03/1999,Valencia,Zaragoza,1,1,D,0,1,A
+SP1,03/04/1999,La Coruna,Ath Madrid,1,1,D,0,1,A
+SP1,03/04/1999,Santander,Valencia,0,1,A,0,0,D
+SP1,04/04/1999,Ath Bilbao,Sociedad,0,0,D,0,0,D
+SP1,04/04/1999,Barcelona,Oviedo,3,1,H,2,1,H
+SP1,04/04/1999,Betis,Espanol,0,1,A,0,0,D
+SP1,04/04/1999,Extremadura,Celta,1,1,D,0,0,D
+SP1,04/04/1999,Real Madrid,Alaves,3,2,H,1,2,A
+SP1,04/04/1999,Valladolid,Tenerife,2,1,H,1,0,H
+SP1,04/04/1999,Villareal,Mallorca,0,2,A,0,0,D
+SP1,04/04/1999,Zaragoza,Salamanca,2,0,H,2,0,H
+SP1,10/04/1999,Tenerife,Barcelona,2,3,A,1,2,A
+SP1,11/04/1999,Alaves,La Coruna,2,1,H,1,1,D
+SP1,11/04/1999,Ath Madrid,Villareal,2,2,D,0,2,A
+SP1,11/04/1999,Celta,Real Madrid,5,1,H,4,1,H
+SP1,11/04/1999,Espanol,Zaragoza,2,1,H,1,0,H
+SP1,11/04/1999,Mallorca,Valladolid,1,0,H,0,0,D
+SP1,11/04/1999,Oviedo,Ath Bilbao,0,0,D,0,0,D
+SP1,11/04/1999,Salamanca,Santander,1,2,A,0,1,A
+SP1,11/04/1999,Sociedad,Betis,1,0,H,0,0,D
+SP1,11/04/1999,Valencia,Extremadura,1,1,D,0,0,D
+SP1,17/04/1999,Barcelona,Mallorca,2,1,H,2,0,H
+SP1,17/04/1999,Valladolid,Ath Madrid,1,0,H,0,0,D
+SP1,18/04/1999,Ath Bilbao,Tenerife,2,0,H,0,0,D
+SP1,18/04/1999,Betis,Oviedo,5,0,H,2,0,H
+SP1,18/04/1999,Celta,Alaves,1,1,D,0,0,D
+SP1,18/04/1999,Extremadura,Salamanca,1,1,D,1,1,D
+SP1,18/04/1999,Real Madrid,Valencia,3,1,H,2,0,H
+SP1,18/04/1999,Santander,Espanol,0,2,A,0,1,A
+SP1,18/04/1999,Villareal,La Coruna,1,2,A,0,2,A
+SP1,18/04/1999,Zaragoza,Sociedad,1,1,D,0,1,A
+SP1,24/04/1999,Valencia,Celta,2,2,D,1,1,D
+SP1,25/04/1999,Alaves,Villareal,2,1,H,0,0,D
+SP1,25/04/1999,Ath Madrid,Barcelona,1,1,D,0,0,D
+SP1,25/04/1999,Espanol,Extremadura,0,0,D,0,0,D
+SP1,25/04/1999,La Coruna,Valladolid,3,0,H,2,0,H
+SP1,25/04/1999,Mallorca,Ath Bilbao,6,1,H,3,0,H
+SP1,25/04/1999,Oviedo,Zaragoza,1,2,A,0,0,D
+SP1,25/04/1999,Salamanca,Real Madrid,1,1,D,0,0,D
+SP1,25/04/1999,Sociedad,Santander,2,0,H,0,0,D
+SP1,25/04/1999,Tenerife,Betis,3,2,H,1,2,A
+SP1,01/05/1999,Real Madrid,Espanol,2,0,H,2,0,H
+SP1,01/05/1999,Valencia,Alaves,5,0,H,2,0,H
+SP1,02/05/1999,Ath Bilbao,Ath Madrid,1,2,A,1,1,D
+SP1,02/05/1999,Barcelona,La Coruna,4,0,H,3,0,H
+SP1,02/05/1999,Betis,Mallorca,1,3,A,0,1,A
+SP1,02/05/1999,Celta,Salamanca,1,0,H,0,0,D
+SP1,02/05/1999,Extremadura,Sociedad,1,0,H,1,0,H
+SP1,02/05/1999,Santander,Oviedo,0,0,D,0,0,D
+SP1,02/05/1999,Valladolid,Villareal,1,0,H,0,0,D
+SP1,02/05/1999,Zaragoza,Tenerife,3,1,H,1,1,D
+SP1,08/05/1999,Sociedad,Real Madrid,3,2,H,1,0,H
+SP1,09/05/1999,Alaves,Valladolid,2,0,H,1,0,H
+SP1,09/05/1999,Ath Madrid,Betis,2,3,A,2,0,H
+SP1,09/05/1999,Espanol,Celta,3,0,H,0,0,D
+SP1,09/05/1999,La Coruna,Ath Bilbao,1,1,D,0,1,A
+SP1,09/05/1999,Mallorca,Zaragoza,1,0,H,1,0,H
+SP1,09/05/1999,Oviedo,Extremadura,1,0,H,0,0,D
+SP1,09/05/1999,Salamanca,Valencia,0,1,A,0,1,A
+SP1,09/05/1999,Tenerife,Santander,2,2,D,1,0,H
+SP1,09/05/1999,Villareal,Barcelona,2,3,A,1,0,H
+SP1,14/05/1999,Santander,Mallorca,1,0,H,0,0,D
+SP1,15/05/1999,Barcelona,Valladolid,1,1,D,0,0,D
+SP1,16/05/1999,Ath Bilbao,Villareal,2,0,H,2,0,H
+SP1,16/05/1999,Betis,La Coruna,0,3,A,0,2,A
+SP1,16/05/1999,Celta,Sociedad,2,2,D,1,2,A
+SP1,16/05/1999,Extremadura,Tenerife,1,0,H,0,0,D
+SP1,16/05/1999,Real Madrid,Oviedo,2,1,H,1,1,D
+SP1,16/05/1999,Salamanca,Alaves,1,0,H,1,0,H
+SP1,16/05/1999,Valencia,Espanol,1,2,A,0,0,D
+SP1,16/05/1999,Zaragoza,Ath Madrid,2,0,H,1,0,H
+SP1,22/05/1999,Alaves,Barcelona,1,4,A,0,1,A
+SP1,23/05/1999,Ath Madrid,Santander,1,1,D,0,0,D
+SP1,23/05/1999,Espanol,Salamanca,4,0,H,2,0,H
+SP1,23/05/1999,La Coruna,Zaragoza,2,1,H,1,0,H
+SP1,23/05/1999,Mallorca,Extremadura,2,0,H,1,0,H
+SP1,23/05/1999,Oviedo,Celta,1,3,A,0,1,A
+SP1,23/05/1999,Sociedad,Valencia,1,1,D,0,0,D
+SP1,23/05/1999,Tenerife,Real Madrid,2,3,A,0,2,A
+SP1,23/05/1999,Valladolid,Ath Bilbao,0,3,A,0,0,D
+SP1,23/05/1999,Villareal,Betis,3,4,A,1,2,A
+SP1,29/05/1999,Ath Bilbao,Barcelona,1,3,A,0,1,A
+SP1,29/05/1999,Valencia,Oviedo,3,0,H,1,0,H
+SP1,30/05/1999,Betis,Valladolid,2,0,H,1,0,H
+SP1,30/05/1999,Celta,Tenerife,2,0,H,1,0,H
+SP1,30/05/1999,Espanol,Alaves,3,0,H,2,0,H
+SP1,30/05/1999,Extremadura,Ath Madrid,2,1,H,1,1,D
+SP1,30/05/1999,Real Madrid,Mallorca,2,1,H,1,0,H
+SP1,30/05/1999,Salamanca,Sociedad,0,1,A,0,0,D
+SP1,30/05/1999,Santander,La Coruna,1,1,D,0,0,D
+SP1,30/05/1999,Zaragoza,Villareal,4,0,H,1,0,H
+SP1,12/06/1999,Ath Madrid,Real Madrid,3,1,H,2,1,H
+SP1,12/06/1999,La Coruna,Extremadura,1,1,D,0,1,A
+SP1,12/06/1999,Valladolid,Zaragoza,1,1,D,0,0,D
+SP1,13/06/1999,Ath Bilbao,Alaves,5,0,H,1,0,H
+SP1,13/06/1999,Barcelona,Betis,4,1,H,3,0,H
+SP1,13/06/1999,Mallorca,Celta,2,0,H,1,0,H
+SP1,13/06/1999,Oviedo,Salamanca,3,2,H,1,2,A
+SP1,13/06/1999,Sociedad,Espanol,1,2,A,1,0,H
+SP1,13/06/1999,Tenerife,Valencia,3,2,H,1,1,D
+SP1,13/06/1999,Villareal,Santander,3,0,H,2,0,H
+SP1,19/06/1999,Salamanca,Tenerife,1,2,A,0,1,A
+SP1,19/06/1999,Santander,Valladolid,0,2,A,0,2,A
+SP1,20/06/1999,Alaves,Sociedad,2,1,H,2,0,H
+SP1,20/06/1999,Betis,Ath Bilbao,1,4,A,0,2,A
+SP1,20/06/1999,Celta,Ath Madrid,0,1,A,0,1,A
+SP1,20/06/1999,Espanol,Oviedo,2,1,H,0,1,A
+SP1,20/06/1999,Extremadura,Villareal,2,2,D,0,1,A
+SP1,20/06/1999,Real Madrid,La Coruna,3,1,H,2,0,H
+SP1,20/06/1999,Valencia,Mallorca,3,0,H,1,0,H
+SP1,20/06/1999,Zaragoza,Barcelona,2,0,H,1,0,H
