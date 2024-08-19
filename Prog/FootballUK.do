@@ -216,9 +216,11 @@ else {
 	save ODDS.dta,replace
 }
 }
+
 /*
 keep b365h b365d b365a bwh bwd bwa iwh iwd iwa psh psd psa whh whd wha vch vcd vca maxh maxd maxa avgh avgd avga lbh lbd lba sjd sja sjh gbh gbd gba bsh bsd bsa sbh sbd sba v45 v46 v47 v48 v50 soh sod soa syh syd sya v11 v12 v13 v14 v15 v16
 */
+
 
 // Generate Partido variable
 egen Partido = concat(hometeam awayteam), punct(" vs ")
