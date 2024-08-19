@@ -27,7 +27,7 @@ else {
 
 gen Season="`season'"
 
-cd "$externaldata\Odds"
+cd "$externaldata"
 if "`season'" == "9899"{
 	save TeamPMatch.dta,replace
 }
