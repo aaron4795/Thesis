@@ -1,0 +1,498 @@
+clear all
+cls
+
+********************************************************************************
+/* Aaron directories */
+global data="C:\Users\aaron\Desktop\GitHub\Thesis\Data"  // Define the global path for data
+global externaldata="C:\Users\aaron\Desktop\GitHub\Thesis\Datasets"  // Path for external datasets
+global prog="C:\Users\aaron\Desktop\GitHub\Thesis\prog"  // Path for programs
+global graphs="C:\Users\aaron\Desktop\GitHub\Thesis\graphs"  // Path for saving graphs
+global tables="C:\Users\aaron\Desktop\GitHub\Thesis\tables"  // Path for saving tables
+********************************************************************************
+
+//*SUMMARY DATA*//
+foreach season in "9899" "9900" "0001" "0102" "0203" "0304" "0405" "0506" "0607" "0708" "0809" "0910" "1011" "1112" "1213" "1314" "1415" "1516" "1617" "1718" "1819" "1920" "2021" "2122" {
+
+// Import data and keep variables of interest
+import excel "$data\FBREF\summary\sum`season'.xlsx", sheet("Sheet1") firstrow clear
+display "`season'"
+rename A index
+destring index, replace
+
+if "`season'"=="1718" | "`season'"=="1819" | "`season'"=="1920" | "`season'"=="2021" | "`season'"=="2122"{
+	keep index Matchweek *_Team *_Score *_Cards Team Home_Away Gls PK* CrdY CrdR /*Fls Fld Off*/
+}
+else{
+	keep index Matchweek *_Team *_Score *_Cards Team Home_Away Gls PK* CrdY CrdR Fls Fld Off	
+}
+
+// Destring variables
+foreach var in Home_Yellow_Cards Home_Red_Cards Away_Yellow_Cards Away_Red_Cards{
+	destring `var', replace
+}
+
+// Generate Season and Partido data by concatenating Home and Away teams
+gen Season="`season'"
+egen Partido=concat(Home_Team Away_Team), pun(" vs ")
+
+// Save data and append all seasons in one file
+cd "$externaldata\FBREF"
+if "`season'"=="9899"{
+	save TeamPMatchSumFBREF.dta,replace
+}
+else{
+	append using TeamPMatchSumFBREF.dta
+	save TeamPMatchSumFBREF.dta,replace
+}
+}
+
+
+********************************************************************************
+********************************************************************************
+
+clear all
+cls
+
+//*POSSESSION DATA*//
+foreach season in "1718" "1819" "1920" "2021" "2122" {
+	
+// Import data and keep variables of interest
+import excel "$data\FBREF\possession\poss`season'.xlsx", sheet("Sheet1") firstrow clear
+keep Matchweek *_Team Team Home_Away Touches_Touches DefPen_Touches
+
+// Generate Season and Partido data by concatenating Home and Away teams
+gen Season="`season'"
+egen Partido=concat(Home_Team Away_Team), pun(" vs ")
+
+// Save data and append all seasons in one file
+cd "$externaldata\FBREF"
+if "`season'"=="1718"{
+	save TeamPMatchPossFBREF.dta,replace
+}
+else{
+	append using TeamPMatchPossFBREF.dta
+	save TeamPMatchPossFBREF.dta,replace
+}
+}
+
+
+********************************************************************************
+********************************************************************************
+
+
+clear all
+cls
+
+//*MISCELANUOS DATA*//
+foreach season in "1718" "1819" "1920" "2021" "2122" {
+
+// Import data and keep variables of interest
+import excel "$data\FBREF\misc\dfmisc`season'.xlsx", sheet("Sheet1") firstrow clear
+keep Matchweek *_Team *_Score *_Cards Team Home_Away Crd* Fls Fld Off PK*
+
+// Generate Season and Partido data by concatenating Home and Away teams
+gen Season="`season'"
+egen Partido=concat(Home_Team Away_Team), pun(" vs ")
+
+// Destring variables
+foreach var in *_Score *_Cards Crd*{
+	destring `var', replace
+}
+
+// Save data and append all seasons in one file
+cd "$externaldata\FBREF"
+if "`season'"=="1718"{
+	save TeamPMatchMiscFBREF.dta,replace
+}
+else{
+	append using TeamPMatchMiscFBREF.dta
+	save TeamPMatchMiscFBREF.dta,replace
+}
+}
+
+
+********************************************************************************
+********************************************************************************
+
+
+clear all
+cls
+foreach season in "1718" "1819" "1920" "2021" "2122" {
+
+// Import data and keep variables of interest
+import excel "$data\FBREF\passing\dfpassing`season'.xlsx", sheet("Sheet1") firstrow clear
+keep Matchweek *_Team Team Home_Away KP-PPA
+
+// Generate Season and Partido data by concatenating Home and Away teams
+gen Season="`season'"
+egen Partido=concat(Home_Team Away_Team), pun(" vs ")
+
+// Save data and append all seasons in one file
+cd "$externaldata\FBREF"
+if "`season'"=="1718"{
+	save TeamPMatchPassFBREF.dta,replace
+}
+else{
+	append using TeamPMatchPassFBREF.dta
+	save TeamPMatchPassFBREF.dta,replace
+}
+}
+
+/*The loops above can be merged into just one bigger loop. However for visualizing reasons
+I decided to separate them. It also makes the code cleaner to look at.*/
+********************************************************************************
+********************************************************************************
+
+// Merge the different dtas created above
+cd "$externaldata\FBREF"
+merge m:m Matchweek Season Partido using TeamPMatchMiscFBREF.dta, nogen
+merge m:m Matchweek Season Partido using TeamPMatchPossFBREF.dta, nogen
+merge m:m Matchweek Season Partido using TeamPMatchSumFBREF.dta, nogen
+
+// Generate Year variable
+gen Year=1998
+replace Year=1999 if Season=="9900"
+replace Year=2000 if Season=="0001"
+replace Year=2001 if Season=="0102"
+replace Year=2002 if Season=="0203"
+replace Year=2003 if Season=="0304"
+replace Year=2004 if Season=="0405"
+replace Year=2005 if Season=="0506"
+replace Year=2006 if Season=="0607"
+replace Year=2007 if Season=="0708"
+replace Year=2008 if Season=="0809"
+replace Year=2009 if Season=="0910"
+replace Year=2010 if Season=="1011"
+replace Year=2011 if Season=="1112"
+replace Year=2012 if Season=="1213"
+replace Year=2013 if Season=="1314"
+replace Year=2014 if Season=="1415"
+replace Year=2015 if Season=="1516"
+replace Year=2016 if Season=="1617"
+replace Year=2017 if Season=="1718"
+replace Year=2018 if Season=="1819"
+replace Year=2019 if Season=="1920"
+replace Year=2020 if Season=="2021"
+replace Year=2021 if Season=="2122"
+
+// Encode Matchweek variable
+lab def n_Matchweek 1 "La Liga (Matchweek 1)" 2 "La Liga (Matchweek 2)" 3 "La Liga (Matchweek 3)" 4 "La Liga (Matchweek 4)" 5 "La Liga (Matchweek 5)" 6 "La Liga (Matchweek 6)" 7 "La Liga (Matchweek 7)" 8 "La Liga (Matchweek 8)" 9 "La Liga (Matchweek 9)" 10 "La Liga (Matchweek 10)" 11 "La Liga (Matchweek 11)" 12 "La Liga (Matchweek 12)" 13 "La Liga (Matchweek 13)" 14 "La Liga (Matchweek 14)" 15 "La Liga (Matchweek 15)" 16 "La Liga (Matchweek 16)" 17 "La Liga (Matchweek 17)" 18 "La Liga (Matchweek 18)" 19 "La Liga (Matchweek 19)" 20 "La Liga (Matchweek 20)" 21 "La Liga (Matchweek 21)" 22 "La Liga (Matchweek 22)" 23 "La Liga (Matchweek 23)" 24 "La Liga (Matchweek 24)" 25 "La Liga (Matchweek 25)" 26 "La Liga (Matchweek 26)" 27 "La Liga (Matchweek 27)" 28 "La Liga (Matchweek 28)" 29 "La Liga (Matchweek 29)" 30 "La Liga (Matchweek 30)" 31 "La Liga (Matchweek 31)" 32 "La Liga (Matchweek 32)" 33 "La Liga (Matchweek 33)" 34 "La Liga (Matchweek 34)" 35 "La Liga (Matchweek 35)" 36 "La Liga (Matchweek 36)" 37 "La Liga (Matchweek 37)" 38 "La Liga (Matchweek 38)"
+encode Matchweek, gen(n_Matchweek)
+drop Matchweek
+rename n_Matchweek Matchweek
+
+// Encode Local dummy variable
+lab def Local 1 "Home" 2 "Away"
+encode Home_Away, gen(Local)
+
+// Sort osb and order variables
+sort Year Matchweek Partido Local
+order Year Matchweek Season Home_Team Away_Team Team Partido Home_Away Home_Score Home_Yellow_Cards Home_Red_Cards Away_Score Away_Yellow_Cards Away_Red_Cards CrdY CrdR Fls Fld Off PKwon PKcon Touches_Touches DefPen_Touches Gls PK PKatt KP Final_Third PPA 
+
+// Generate Local and Away data
+foreach var in Fls Fld Off PKwon PKcon Touches_Touches DefPen_Touches Gls PK PKatt KP Final_Third PPA{
+foreach local in Home Away{
+	gen `local'_`var'=.
+	replace `local'_`var'=`var' if Home_Away=="`local'"
+
+if "`local'"=="Away"{
+	replace `local'_`var'=`local'_`var'[_n+1]
+}
+}
+}
+
+// Drop obs that are no longer useful
+drop if Home_Away == "Away"
+
+// Delete variables
+foreach vardel in index /*indexDel*/ Crd* Fls Fld Off PKwon PKcon Touches_Touches DefPen_Touches Gls PK PKatt KP Final_Third PPA{
+	drop `vardel'
+}
+
+// Merge with FootballUKdata dta
+cd "$externaldata/FootballUK"
+merge m:m Season Partido using FootballUKdata.dta, nogen
+
+// Save data
+cd "$externaldata"
+save DataPMatchFBREF.dta,replace
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+
+foreach year in "0405" "0506" "0607" "0708" "0809" "0910" "1011" "1112" "1213" "1314" "1415" "1516" "1617" "1718" "1819" "1920" "2021" "2122" {
+cd "$data\Transfermkt"
+// Import data
+import excel "mktvalue.xlsx", sheet("`year'") firstrow clear
+gen Season="`year'"
+
+rename Club Equipo
+rename Totalmarketvalue TotalmarketvalueEUR
+
+// Standarize the names of the teams
+{
+	replace Equipo = subinstr(Equipo, "Albacete Balompié", "Albacete", .)
+	replace Equipo = subinstr(Equipo, "Athletic Bilbao", "Athletic Club", .)
+	replace Equipo = subinstr(Equipo, "Atlético de Madrid", "Atlético Madrid", .)
+	replace Equipo = subinstr(Equipo, "CA Osasuna", "Osasuna", .)
+	replace Equipo = subinstr(Equipo, "Cádiz CF", "Cádiz", .)
+	replace Equipo = subinstr(Equipo, "CD Leganés", "Leganés", .)
+	replace Equipo = subinstr(Equipo, "CD Numancia", "Numancia", .)
+	replace Equipo = subinstr(Equipo, "CD Tenerife", "Tenerife", .)
+	replace Equipo = subinstr(Equipo, "Celta de Vigo", "Celta Vigo", .)
+	replace Equipo = subinstr(Equipo, "Córdoba CF", "Córdoba", .)
+	replace Equipo = subinstr(Equipo, "Deportivo Alavés", "Alavés", .)
+	replace Equipo = subinstr(Equipo, "Deportivo de La Coruña", "La Coruña", .)
+	replace Equipo = subinstr(Equipo, "Elche CF", "Elche", .)
+	replace Equipo = subinstr(Equipo, "FC Barcelona", "Barcelona", .)
+	replace Equipo = subinstr(Equipo, "Getafe CF", "Getafe", .)
+	replace Equipo = subinstr(Equipo, "Gimnàstic de Tarragona", "Gimnàstic", .)
+	replace Equipo = subinstr(Equipo, "Girona FC", "Girona", .)
+	replace Equipo = subinstr(Equipo, "Granada CF", "Granada", .)
+	replace Equipo = subinstr(Equipo, "Hércules CF", "Hércules", .)
+	replace Equipo = subinstr(Equipo, "Levante UD", "Levante", .)
+	replace Equipo = subinstr(Equipo, "Málaga CF", "Málaga", .)
+	replace Equipo = subinstr(Equipo, "Racing Santander", "Racing Sant", .)
+	replace Equipo = subinstr(Equipo, "RCD Espanyol Barcelona", "Espanyol", .)
+	replace Equipo = subinstr(Equipo, "RCD Mallorca", "Mallorca", .)
+	replace Equipo = subinstr(Equipo, "Real Betis Balompié", "Betis", .)
+	replace Equipo = subinstr(Equipo, "Real Murcia CF", "Real Murcia", .)
+	replace Equipo = subinstr(Equipo, "Real Oviedo", "Oviedo", .)
+	replace Equipo = subinstr(Equipo, "Real Valladolid", "Valladolid", .)
+	replace Equipo = subinstr(Equipo, "Real Zaragoza", "Zaragoza", .)
+	replace Equipo = subinstr(Equipo, "Recreativo Huelva", "Recreativo", .)
+	replace Equipo = subinstr(Equipo, "SD Eibar", "Eibar", .)
+	replace Equipo = subinstr(Equipo, "SD Huesca", "Huesca", .)
+	replace Equipo = subinstr(Equipo, "Sevilla FC", "Sevilla", .)
+	replace Equipo = subinstr(Equipo, "UD Almería", "Almería", .)
+	replace Equipo = subinstr(Equipo, "UD Las Palmas", "Las Palmas", .)
+	replace Equipo = subinstr(Equipo, "Valencia CF", "Valencia", .)
+	replace Equipo = subinstr(Equipo, "Valladolid CF", "Valladolid", .)
+	replace Equipo = subinstr(Equipo, "Villarreal CF", "Villarreal", .)
+	replace Equipo = subinstr(Equipo, "Xerez CD", "Xerez", .)
+}
+
+label var TotalmarketvalueEUR "Total market value EUR"
+
+// Save and append in one dta
+cd "$externaldata"
+if "`year'" == "0405"{
+	save mktvalueTot.dta,replace	
+}
+else{
+	append using mktvalueTot.dta
+	save mktvalueTot,replace
+}
+}
+
+
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+//*MARKET VALUE AND WAGES DATA*//
+clear all
+cls
+
+foreach year in "1314" "1415" "1516" "1617" "1718" "1819" "1920" "2021" "2122" {
+cd "$data\FBREF"
+// Import WAGES data
+import excel "WAGES LaLiga.xlsx", sheet("`year'") firstrow clear
+
+gen Season="`year'"
+
+rename Squad Equipo
+
+// Clean obs values
+{
+	replace Equipo = subinstr(Equipo, "Ã¡", "á", .)
+	replace Equipo = subinstr(Equipo, "Ã ", "à", .)
+	replace Equipo = subinstr(Equipo, "Ã©", "é", .)
+	replace Equipo = subinstr(Equipo, "Ã­", "í", .)
+	replace Equipo = subinstr(Equipo, "Ã³", "ó", .)
+	replace Equipo = subinstr(Equipo, "Ã±", "ñ", .)
+	replace Equipo = subinstr(Equipo, "Girona FC", "Girona", .)
+	replace Equipo = subinstr(Equipo, "SD Huesca", "Huesca", .)
+}
+
+
+// Save and append data in one dta
+if "`year'" == "1314"{
+	save wagesTot.dta,replace	
+}
+else{
+	append using wagesTot.dta
+	save wagesTot,replace
+}
+}
+
+// Clean values of the obs and destring variables
+foreach var in WeeklyWagesEUR WeeklyWagesGBP AnnualWagesEUR AnnualWagesGBP{
+	replace `var' = subinstr(`var', ", ", "", .)
+	replace `var' = subinstr(`var', "â‚¬ ", "", .)
+	replace `var' = subinstr(`var', "£", "", .)
+	destring `var',replace
+}
+
+// Merge Wages data with Market value
+cd "$externaldata"
+merge 1:1 Equipo Season using mktvalueTot.dta
+sort Season Equipo
+
+// Generate Year variable
+{
+	gen Year = 2004 if Season == "0405"
+	replace Year = 2005 if Season == "0506"
+	replace Year = 2006 if Season == "0607"
+	replace Year = 2007 if Season == "0708"
+	replace Year = 2008 if Season == "0809"
+	replace Year = 2009 if Season == "0910"
+	replace Year = 2010 if Season == "1011"
+	replace Year = 2011 if Season == "1112"
+	replace Year = 2012 if Season == "1213"
+	replace Year = 2013 if Season == "1314"
+	replace Year = 2014 if Season == "1415"
+	replace Year = 2015 if Season == "1516"
+	replace Year = 2016 if Season == "1617"
+	replace Year = 2017 if Season == "1718"
+	replace Year = 2018 if Season == "1819"
+	replace Year = 2019 if Season == "1920"
+	replace Year = 2020 if Season == "2021"
+	replace Year = 2021 if Season == "2122"
+}
+
+// Drop variables
+foreach var in WeeklyWagesEUR WeeklyWagesGBP WeeklyWagesUSD AnnualWagesGBP Estimated Squad øage Foreigners ømarketvalue _merge Rk Pl{
+	drop `var'
+}
+
+// Standarize names of the teams
+replace Equipo = subinstr(Equipo, "La Coruña", "Deportivo La Coruña", .)
+replace Equipo = subinstr(Equipo, "Racing Sant", "Racing Santander", .)
+
+// Create home and away variables
+gen Home_Team = Equipo
+gen Away_Team = Equipo
+
+cd "$externaldata"
+save mktvalueTot.dta,replace
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+//* MERGE MKT VALUE AND WAGES DATA WITH TEAMS STATS *//
+cd "$externaldata"
+merge 1:1 Season Equipo using SQVS.dta, nogen
+
+gen TotMktValueStr = Totalmarketvalue
+
+replace TotalmarketvalueEUR = subinstr(TotalmarketvalueEUR, "m", "", .)
+replace TotalmarketvalueEUR = subinstr(TotalmarketvalueEUR, "€", "", .)
+replace TotalmarketvalueEUR = subinstr(TotalmarketvalueEUR, "bn", "", .)
+
+destring Total, gen(Total1)
+
+gen TotMktValueEUR = Total1*1000000
+
+replace TotMktValueEUR = 1090000000 if Equipo == "Barcelona" & Season == "1718"
+replace TotMktValueEUR = 1160000000 if Equipo == "Barcelona" & Season == "1819"
+
+// Keep variables of interest, order, and sort them
+keep Equipo AnnualWagesEUR AnnualWagesUSD Season Year Home_Team Away_Team RL PJ TA_contra TR_contra TA2_contra TA_favor TR_favor TA2_favor TPint_favor TPint_contra Fls_cometidasPor Fls_recibidasContra Offside_contra PG PE PP DG TotMktValueStr TotMktValueEUR
+
+order RL Equipo Season Year PJ PG PE PP DG TA_contra TR_contra TA2_contra TA_favor TR_favor TA2_favor TPint_favor TPint_contra Fls_cometidasPor Fls_recibidasContra Offside_contra
+sort Year RL
+
+// Save data
+cd "$externaldata"
+save DATA_PRE.dta,replace
+
+
+// Import data
+cd "$externaldata"
+use DataPMatchFBREF.dta,clear
+sort date
+
+// Drop variables that won't be used
+keep Year Matchweek Season Home_Team Away_Team Partido Home_Score *_Yellow_Cards *_Red_Cards Away_Score *_Off *_PKcon Home_PK Away_PK *_PKatt date FullTime homefouls awayfouls
+
+// Generate fouls and penalty kicks variables
+gen Away_Fld = homefouls
+gen Home_Fld = awayfouls
+
+replace Home_PKcon = Away_PKatt
+replace Away_PKcon = Home_PKatt
+
+rename homefouls Home_Fouls
+rename awayfouls Away_Fouls
+
+// Encode FinalResult variables
+replace FullTime = "Home" if FullTime == "H"
+replace FullTime = "Away" if FullTime == "A"
+replace FullTime = "Draw" if FullTime == "D"
+
+lab def FinalResult 1 "Home" 2 "Draw" 3 "Away"
+encode FullTime, gen(FinalResult)
+drop FullTime
+
+replace Home_Team = subinstr(Home_Team, "Real Betis", "Betis", .)
+replace Away_Team = subinstr(Away_Team, "Real Betis", "Betis", .)
+
+// Merge with MktvalueTot dta
+foreach local in Home Away{
+	cd "$externaldata"
+	merge m:m `local'_Team Season using mktvalueTot, nogen keepusing(AnnualWagesEUR TotalmarketvalueEUR Equipo)
+		foreach var in Equipo AnnualWagesEUR TotalmarketvalueEUR{
+			rename `var' `local'`var'
+		}
+}
+
+// Destring total market variables
+foreach local in Home Away{
+	replace `local'TotalmarketvalueEUR = subinstr(`local'TotalmarketvalueEUR, "€", "", .)
+
+	gen mult`local'=1000000 if strpos(`local'TotalmarketvalueEUR, "m")
+	replace mult`local'=1000000000 if strpos(`local'TotalmarketvalueEUR, "bn")
+
+	replace `local'TotalmarketvalueEUR = subinstr(`local'TotalmarketvalueEUR, "m", "", .)
+	replace `local'TotalmarketvalueEUR = subinstr(`local'TotalmarketvalueEUR, "bn", "", .)
+
+	destring `local'TotalmarketvalueEUR,replace
+
+	gen `local'MKtValue=`local'TotalmarketvalueEUR*mult`local'
+
+	drop `local'TotalmarketvalueEUR
+	drop mult`local'
+}
+
+order HomeEquipo HomeAnnualWagesEUR HomeMKtValue AwayEquipo AwayAnnualWagesEUR AwayMKtValue,last
+
+rename HomeMKtValue HomeMktValue
+rename AwayMKtValue AwayMktValue
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+// Variables de cohortes
+/*
+lab def Pagos 1 "Antes" 2 "Durante" 3 "Después"
+
+gen Pagos="Antes"
+replace Pagos="Durante" if Year>2000 & Year<2018
+replace Pagos="Después" if Year>2017
+
+lab def Pagosn 1 "Antes" 2 "Durante" 3 "Después"
+
+encode Pagos, gen(Pagosn)
+drop Pagos
+rename Pagosn Pagos
+
+*/
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+replace Partido = subinstr(Partido, "Real Betis", "Betis", .)
+
+// Save dta
+sort date
+save Merge1.dta,replace
