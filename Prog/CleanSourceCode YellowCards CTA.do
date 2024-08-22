@@ -11,9 +11,6 @@ global tables="C:\Users\aaron\Desktop\GitHub\Thesis\tables"  // Path for saving 
 ********************************************************************************
 
 
-/*
-// This part of the code is commented due to the time it takes to do it in every iteration.
-// Once saved the first time we don't need to iterate it every time.
 forvalues x=1/16{
 display "`x'"
 quiet import delimited "$data\RFEF - CTA\h`x'.csv", varnames(1) clear
@@ -29,7 +26,7 @@ else{
 	save SOURCODE.dta,replace
 }
 }
-*/
+
 ********************************************************************************
 
 // Import data
