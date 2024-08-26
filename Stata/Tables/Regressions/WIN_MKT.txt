@@ -1,0 +1,33 @@
+	(1)	(2)	(3)	(4)
+	All teams in La Liga		All teams in La Liga	
+VARIABLES	Win	/	Win	/
+				
+DiffMktValue	0.000***		0.000***	
+	(0.000)		(0.000)	
+Local	0.533***		0.507***	
+	(0.024)		(0.025)	
+YellowContra	-0.013		-0.031***	
+	(0.008)		(0.009)	
+YellowFavor	-0.009		0.007	
+	(0.008)		(0.009)	
+RedContra	-0.428***		-0.426***	
+	(0.035)		(0.036)	
+RedFavor	0.383***		0.383***	
+	(0.031)		(0.032)	
+PenAtt	0.289***		0.283***	
+	(0.031)		(0.031)	
+PenConc	-0.179***		-0.172***	
+	(0.033)		(0.033)	
+Fouls			0.021***	
+			(0.003)	
+Fld			-0.017***	
+			(0.003)	
+lnsig2u		-4.669***		-4.784***
+		(0.458)		(0.463)
+Constant	-0.625***		-0.661***	
+	(0.038)		(0.058)	
+				
+Observations	13,680	13,680	12,920	12,920
+Number of Equipo	41	41	40	40
+Standard errors in parentheses				
+*** p<0.01, ** p<0.05, * p<0.1				
