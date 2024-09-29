@@ -11,7 +11,7 @@ If you’d like to learn more about the case, you can search for "Negreira case.
 To read my full research, please copy this URL into your browser: https://repositorio-digital.cide.edu/handle/11651/5667
 I hope you find it interesting! Lmk your thoughts!
 
-For details on the project structure and how the codes relate to each other, please refer to the Excel file included in the repository.
+For details on the project structure and how the codes relate to each other, please refer to the Excel file: Codes HIERARCHY.xlsx
 
 Lastly, as a challenge and a way to enhance my Python skills, I'm in the process of "translating" my codes from STATA to Python. 
 While I'm not finished yet, you can find some codes in their respective folder.
