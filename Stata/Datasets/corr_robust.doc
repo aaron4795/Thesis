@@ -1,0 +1,101 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\fs20\b\qc\line Correlation }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\ql { {Variables}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr { {(1)}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr { {(2)}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr { {(3)}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(1) DifBookAdjust}}\cell
+\cellx3090
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(2) DiffMktValue}}\cell
+\cellx3090
+\qr {{-0.757}}\cell
+\cellx4310
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(3) PointXMatch}}\cell
+\cellx3090
+\qr {{-0.255}}\cell
+\cellx4310
+\qr {{0.257}}\cell
+\cellx5530
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw15\brdrs\cellx5530{}\cell
+\row}
+
+
+{\fs20\b\qc\line Correlation }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\ql { {Variables}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr { {(1)}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr { {(2)}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr { {(3)}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr { {(4)}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(1) DifBookAdjust}}\cell
+\cellx3090
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(2) MktValue}}\cell
+\cellx3090
+\qr {{-0.519}}\cell
+\cellx4310
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(3) DiffMktValue}}\cell
+\cellx3090
+\qr {{-0.757}}\cell
+\cellx4310
+\qr {{0.685}}\cell
+\cellx5530
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql { {(4) PointXMatch}}\cell
+\cellx3090
+\qr {{-0.255}}\cell
+\cellx4310
+\qr {{0.343}}\cell
+\cellx5530
+\qr {{0.257}}\cell
+\cellx6750
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw15\brdrs\cellx6750{}\cell
+\row}
+
+
+\writepositionforappend
+}}

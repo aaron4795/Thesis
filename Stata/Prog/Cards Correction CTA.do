@@ -165,8 +165,8 @@ drop x
 
 // Iterate over the variables Season, Jornada, Acta, homeEquipo, and awayEquipo
 foreach var in Season Jornada Acta homeEquipo awayEquipo{
-	    // Replace the current variable with the value from the previous row if it is empty
-replace `var' = `var'[_n-1] if `var' == ""
+	// Replace the current variable with the value from the previous row if it is empty
+	replace `var' = `var'[_n-1] if `var' == ""
 }
 
 // Generate a new variable "Partido" by concatenating homeEquipo and awayEquipo with "vs" as the punctuation
@@ -187,7 +187,7 @@ gen Aux = ")"
 egen J = concat(Jornada Aux)
 replace Jornada = J
 drop Aux-J
-
+xxx
 // Assign season, matchweek, match details, and expulsion data for missing matches
 {
 insobs 4

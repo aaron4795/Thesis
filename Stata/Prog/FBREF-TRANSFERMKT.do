@@ -322,6 +322,7 @@ use STATS_SQ.dta, clear
 
 // Merge with Transfermkt info and update values
 merge 1:1 Equipo Season using SZN_TRANSFMKT_9814.dta, replace update
+
 gen TA_favor = .
 gen TR_favor = .
 gen TA2_favor = .
