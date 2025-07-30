@@ -187,7 +187,7 @@ gen Aux = ")"
 egen J = concat(Jornada Aux)
 replace Jornada = J
 drop Aux-J
-xxx
+
 // Assign season, matchweek, match details, and expulsion data for missing matches
 {
 insobs 4
