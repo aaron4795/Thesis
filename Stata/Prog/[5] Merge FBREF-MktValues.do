@@ -212,8 +212,8 @@ foreach vardel in index /*indexDel*/ Crd* Fls Fld Off PKwon PKcon Touches_Touche
 }
 
 // Merge with FootballUKdata dta
-cd "$externaldata/FootballUK"
-merge m:m Season Partido using FootballUKdata.dta, nogen
+cd "$externaldata"
+merge m:m Season Partido using DataPMatchFBREF.dta, nogen
 
 // Save data
 cd "$externaldata"

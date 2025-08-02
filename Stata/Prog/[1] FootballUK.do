@@ -38,56 +38,56 @@ else{
 
 // Gen Year variable
 quietly{
-gen Year=1998
-replace Year=1999 if Season=="9900"
-replace Year=2000 if Season=="0001"
-replace Year=2001 if Season=="0102"
-replace Year=2002 if Season=="0203"
-replace Year=2003 if Season=="0304"
-replace Year=2004 if Season=="0405"
-replace Year=2005 if Season=="0506"
-replace Year=2006 if Season=="0607"
-replace Year=2007 if Season=="0708"
-replace Year=2008 if Season=="0809"
-replace Year=2009 if Season=="0910"
-replace Year=2010 if Season=="1011"
-replace Year=2011 if Season=="1112"
-replace Year=2012 if Season=="1213"
-replace Year=2013 if Season=="1314"
-replace Year=2014 if Season=="1415"
-replace Year=2015 if Season=="1516"
-replace Year=2016 if Season=="1617"
-replace Year=2017 if Season=="1718"
-replace Year=2018 if Season=="1819"
-replace Year=2019 if Season=="1920"
-replace Year=2020 if Season=="2021"
-replace Year=2021 if Season=="2122"
-replace Year=2022 if Season=="2223"
-replace Year=2023 if Season=="2324"
+	gen Year=1998
+	replace Year=1999 if Season=="9900"
+	replace Year=2000 if Season=="0001"
+	replace Year=2001 if Season=="0102"
+	replace Year=2002 if Season=="0203"
+	replace Year=2003 if Season=="0304"
+	replace Year=2004 if Season=="0405"
+	replace Year=2005 if Season=="0506"
+	replace Year=2006 if Season=="0607"
+	replace Year=2007 if Season=="0708"
+	replace Year=2008 if Season=="0809"
+	replace Year=2009 if Season=="0910"
+	replace Year=2010 if Season=="1011"
+	replace Year=2011 if Season=="1112"
+	replace Year=2012 if Season=="1213"
+	replace Year=2013 if Season=="1314"
+	replace Year=2014 if Season=="1415"
+	replace Year=2015 if Season=="1516"
+	replace Year=2016 if Season=="1617"
+	replace Year=2017 if Season=="1718"
+	replace Year=2018 if Season=="1819"
+	replace Year=2019 if Season=="1920"
+	replace Year=2020 if Season=="2021"
+	replace Year=2021 if Season=="2122"
+	replace Year=2022 if Season=="2223"
+	replace Year=2023 if Season=="2324"
 
 // Standarize the names of the clubs
 foreach var in hometeam awayteam{
-replace `var'=subinstr(`var',"Almeria","Almería",.)
-replace `var'=subinstr(`var',"Ath Bilbao","Athletic Club",.)
-replace `var'=subinstr(`var',"Ath Madrid","Atlético Madrid",.)
-replace `var'=subinstr(`var',"Betis","Real Betis",.)
-replace `var'=subinstr(`var',"Cadiz","Cádiz",.)
-replace `var'=subinstr(`var',"Celta","Celta Vigo",.)
-replace `var'=subinstr(`var',"Cordoba","Córdoba",.)
-replace `var'=subinstr(`var',"Alaves","Alavés",.)
-replace `var'=subinstr(`var',"La Coruna","Deportivo La Coruña",.)
-replace `var'=subinstr(`var',"Gimnastic","Gimnàstic",.)
-replace `var'=subinstr(`var',"Hercules","Hércules",.)
-replace `var'=subinstr(`var',"Malaga","Málaga",.)
-replace `var'=subinstr(`var',"Espanol","Espanyol",.)
-replace `var'=subinstr(`var',"Leganes","Leganés",.)
-replace `var'=subinstr(`var',"Murcia","Real Murcia",.)
-replace `var'=subinstr(`var',"Real Oviedo","Oviedo",.)
-replace `var'=subinstr(`var',"Sp Gijon","Sporting Gijón",.)
-replace `var'=subinstr(`var',"Sociedad","Real Sociedad",.)
-replace `var'=subinstr(`var',"Santander","Racing Santander",.)
-replace `var'=subinstr(`var',"Vallecano","Rayo Vallecano",.)
-replace `var'=subinstr(`var',"Villareal","Villarreal",.)
+	replace `var'=subinstr(`var',"Almeria","Almería",.)
+	replace `var'=subinstr(`var',"Ath Bilbao","Athletic Club",.)
+	replace `var'=subinstr(`var',"Ath Madrid","Atlético Madrid",.)
+	replace `var'=subinstr(`var',"Betis","Real Betis",.)
+	replace `var'=subinstr(`var',"Cadiz","Cádiz",.)
+	replace `var'=subinstr(`var',"Celta","Celta Vigo",.)
+	replace `var'=subinstr(`var',"Cordoba","Córdoba",.)
+	replace `var'=subinstr(`var',"Alaves","Alavés",.)
+	replace `var'=subinstr(`var',"La Coruna","Deportivo La Coruña",.)
+	replace `var'=subinstr(`var',"Gimnastic","Gimnàstic",.)
+	replace `var'=subinstr(`var',"Hercules","Hércules",.)
+	replace `var'=subinstr(`var',"Malaga","Málaga",.)
+	replace `var'=subinstr(`var',"Espanol","Espanyol",.)
+	replace `var'=subinstr(`var',"Leganes","Leganés",.)
+	replace `var'=subinstr(`var',"Murcia","Real Murcia",.)
+	replace `var'=subinstr(`var',"Real Oviedo","Oviedo",.)
+	replace `var'=subinstr(`var',"Sp Gijon","Sporting Gijón",.)
+	replace `var'=subinstr(`var',"Sociedad","Real Sociedad",.)
+	replace `var'=subinstr(`var',"Santander","Racing Santander",.)
+	replace `var'=subinstr(`var',"Vallecano","Rayo Vallecano",.)
+	replace `var'=subinstr(`var',"Villareal","Villarreal",.)
 }
 }
 
