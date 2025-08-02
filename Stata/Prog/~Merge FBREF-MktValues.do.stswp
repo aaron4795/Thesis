@@ -176,7 +176,6 @@ merge m:m Matchweek Season Partido using TeamPMatchSumFBREF.dta, nogen
 	replace Year=2020 if Season=="2021"
 	replace Year=2021 if Season=="2122"
 }
-
 // Encode Matchweek variable
 lab def n_Matchweek 1 "La Liga (Matchweek 1)" 2 "La Liga (Matchweek 2)" 3 "La Liga (Matchweek 3)" 4 "La Liga (Matchweek 4)" 5 "La Liga (Matchweek 5)" 6 "La Liga (Matchweek 6)" 7 "La Liga (Matchweek 7)" 8 "La Liga (Matchweek 8)" 9 "La Liga (Matchweek 9)" 10 "La Liga (Matchweek 10)" 11 "La Liga (Matchweek 11)" 12 "La Liga (Matchweek 12)" 13 "La Liga (Matchweek 13)" 14 "La Liga (Matchweek 14)" 15 "La Liga (Matchweek 15)" 16 "La Liga (Matchweek 16)" 17 "La Liga (Matchweek 17)" 18 "La Liga (Matchweek 18)" 19 "La Liga (Matchweek 19)" 20 "La Liga (Matchweek 20)" 21 "La Liga (Matchweek 21)" 22 "La Liga (Matchweek 22)" 23 "La Liga (Matchweek 23)" 24 "La Liga (Matchweek 24)" 25 "La Liga (Matchweek 25)" 26 "La Liga (Matchweek 26)" 27 "La Liga (Matchweek 27)" 28 "La Liga (Matchweek 28)" 29 "La Liga (Matchweek 29)" 30 "La Liga (Matchweek 30)" 31 "La Liga (Matchweek 31)" 32 "La Liga (Matchweek 32)" 33 "La Liga (Matchweek 33)" 34 "La Liga (Matchweek 34)" 35 "La Liga (Matchweek 35)" 36 "La Liga (Matchweek 36)" 37 "La Liga (Matchweek 37)" 38 "La Liga (Matchweek 38)"
 encode Matchweek, gen(n_Matchweek)
