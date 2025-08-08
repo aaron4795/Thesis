@@ -68,14 +68,25 @@ else{
 ********************************************************************************
 //*FOOTBALL LINEUPS DATA*//
 
-forvalues i=1/56{
+forvalues i=1/101{
 // Import data
 import excel "$data\FootballLineups\HACKIN\HACKIN`i'.xlsx", sheet("Sheet 1") firstrow clear
-
+display "`i'"
+if `i' <= 56 {
+	// Rename variables
+	rename X1 Home_Team
+	rename X2 Stats
+	rename X3 Away_Team
+}
+else if `i' == 90 {
+	continue
+}
+else{
 // Rename variables
-rename X1 Home_Team
-rename X2 Stats
-rename X3 Away_Team
+	rename x1 Home_Team
+	rename x2 Stats
+	rename x3 Away_Team	
+}
 
 // Save and append in one dta
 cd "$externaldata\FootballLineups"
@@ -649,8 +660,9 @@ sort Year Jornada index
 // Drop even obs
 gen dupindi=0
 forvalues i=1(2)20000{
-qui replace dupindi=1 if `i'==index
+	qui replace dupindi=1 if `i'==index
 }
+
 drop if dupindi==1
 drop dupindi
 drop index
