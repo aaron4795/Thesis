@@ -227,7 +227,8 @@ foreach var in Yellow Red{
 // Generate the square of the market value difference (MktValue^2)
 gen SqDifMktValue=DiffMktValue^2
 
-// Handle missing data for Fouls, Fld, and Offsides by setting them to missing if the year is before 2005replace Fouls=. if Year<2005
+// Handle missing data for Fouls, Fld, and Offsides by setting them to missing if the year is before 2005
+replace Fouls=. if Year<2005
 replace Fld=. if Year<2005
 replace Offsides=. if Year<2005
 
