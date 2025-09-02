@@ -14,6 +14,7 @@ global tables="C:\Users\aaron\Desktop\GitHub\Thesis\Stata\Tables"  // Path for s
 cd "$externaldata"
 // Load the dataset containing penalties conceded
 use PenaltiesConceded.dta, clear
+
 // Merge with another dataset using multiple variables (m:m merge on Partido and Year)
 merge m:m Partido Year using Merge1.dta
 sort Year Matchweek
@@ -121,6 +122,7 @@ save FullTeamProbit.dta,replace
 
 // Merge with attendance data based on Year, Jornada, and hometeam
 merge m:m Year Jornada hometeam using $externaldata/TRANSFERMKT/Attendance9821R.dta, nogen
+
 // Merge with odds data based on Year and Partido
 merge m:m Year Partido using $externaldata/ODDS.dta, nogen
 
